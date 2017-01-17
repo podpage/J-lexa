@@ -1,7 +1,7 @@
 package org.podpage.alexa.skills.defaultskills;
 
 import org.podpage.alexa.skills.*;
-import org.podpage.alexa.skills.alexa.response.AlexaRequest;
+import org.podpage.alexa.skills.alexa.request.AlexaRequest;
 
 public class DebugSkill implements Skill {
 

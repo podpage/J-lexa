@@ -1,4 +1,4 @@
-package org.podpage.alexa.skills.alexa.response;
+package org.podpage.alexa.skills.alexa.request;
 
 /**
  * Created by Lino on 16.01.2017.

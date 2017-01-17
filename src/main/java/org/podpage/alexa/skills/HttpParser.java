@@ -1,6 +1,6 @@
 package org.podpage.alexa.skills;
 
-import org.podpage.alexa.skills.alexa.response.AlexaRequest;
+import org.podpage.alexa.skills.alexa.request.AlexaRequest;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,7 +25,9 @@ public class HttpParser {
             if (buffSize > 0) {
                 byte[] buff = new byte[buffSize];
                 int ret_read = inputStream.read(buff);
-                sb.append(new String(buff, 0, ret_read));
+                if (ret_read != -1) {
+                    sb.append(new String(buff, 0, ret_read));
+                }
             }
             String request = sb.toString();
             String lines[] = request.split("\\r?\\n");

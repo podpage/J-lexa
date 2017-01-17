@@ -1,6 +1,6 @@
 package org.podpage.alexa.skills;
 
-import org.podpage.alexa.skills.alexa.response.AlexaRequest;
+import org.podpage.alexa.skills.alexa.request.AlexaRequest;
 
 public interface Skill {
 

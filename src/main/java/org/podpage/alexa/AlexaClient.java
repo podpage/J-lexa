@@ -1,7 +1,7 @@
 package org.podpage.alexa;
 
 import org.podpage.alexa.skills.*;
-import org.podpage.alexa.skills.alexa.response.AlexaRequest;
+import org.podpage.alexa.skills.alexa.request.AlexaRequest;
 import org.podpage.alexa.skills.defaultskills.NoAlexaSkill;
 import org.podpage.alexa.skills.defaultskills.NoSkill;
 

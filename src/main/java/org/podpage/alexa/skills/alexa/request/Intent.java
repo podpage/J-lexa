@@ -1,4 +1,4 @@
-package org.podpage.alexa.skills.alexa.response;
+package org.podpage.alexa.skills.alexa.request;
 
 import java.util.HashMap;
 
