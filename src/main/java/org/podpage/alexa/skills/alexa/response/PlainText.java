@@ -8,7 +8,7 @@ public class PlainText extends ResponseText {
     private String text;
 
     public PlainText(String text) {
-        super("PlainText");
+        super("Text");
         this.text = text;
     }
 

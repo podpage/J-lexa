@@ -9,7 +9,7 @@ public class WebManager {
     public static AlexaServer alexaServer;
 
     public static void main(String... args) {
-        String domain = "localhost";
+        String domain = "alexa.podpage.org";
         if (args.length > 0) {
             domain = args[0];
         }

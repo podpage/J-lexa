@@ -5,13 +5,18 @@ package org.podpage.alexa.skills.alexa.response.ssml;
  */
 public class P extends SSMLObject {
 
-    private String paragraph;
+    private SSMLObject[] ssml;
 
-    public P(String paragraph) {
-        this.paragraph = "<p>" + paragraph + "</p>";
+    public P(SSMLObject... ssml) {
+        this.ssml = ssml;
     }
 
     public String toSSML() {
-        return "";
+        String speak = "<p>";
+        for (SSMLObject ssmlObject : ssml) {
+            speak += ssmlObject.toString();
+        }
+        speak += "</p>";
+        return speak;
     }
 }
