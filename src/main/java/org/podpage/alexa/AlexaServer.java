@@ -4,7 +4,6 @@ import org.podpage.alexa.skills.Header;
 import org.podpage.alexa.skills.Skill;
 import org.podpage.alexa.skills.defaultskills.DebugSkill;
 import org.podpage.alexa.skills.defaultskills.DemoSkill;
-import org.podpage.alexa.skills.defaultskills.DshopSkill;
 import org.podpage.alexa.skills.defaultskills.NoSkill;
 
 import java.util.HashMap;
@@ -27,7 +26,6 @@ public class AlexaServer {
         addWebPage("404", NoSkill.class);
         addWebPage("test", DemoSkill.class);
         addWebPage("debug", DebugSkill.class);
-        addWebPage("dshop", DshopSkill.class);
     }
 
 
