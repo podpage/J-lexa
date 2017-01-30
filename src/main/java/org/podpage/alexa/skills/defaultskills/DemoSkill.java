@@ -22,6 +22,6 @@ public class DemoSkill implements Skill {
 
         //rc.addContent("{\"version\": \"1.0\", \"response\": { \"outputSpeech\": { \"type\": \"SSML\", \"ssml\": \"<speak>Im Moment sind " + new Random().nextInt(10) + " User auf dem Server</speak>\" }, \"reprompt\": { \"outputSpeech\": { \"type\": \"Text\", \"text\": \"Was willst du denn wissen?\" } }, \"shouldEndSession\": true } }");
         ResponseHeader responseHeader = new ResponseHeader(ResponseHeader.ResponseCode.CODE_200);
-        return new SkillResponse(responseHeader, rc);
+        return new SkillResponse(alexaResponse);
     }
 }

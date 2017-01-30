@@ -22,4 +22,8 @@ public class SSMLText extends ResponseText {
     public void setSsml(Speak ssml) {
         this.ssml = ssml;
     }
+
+    public String toString() {
+        return ssml.toSSML();
+    }
 }

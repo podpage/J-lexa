@@ -19,4 +19,8 @@ public class PlainText extends ResponseText {
     public void setText(String text) {
         this.text = text;
     }
+
+    public String toString() {
+        return text;
+    }
 }
