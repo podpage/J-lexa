@@ -1,8 +1,5 @@
 package org.podpage.alexa.skills.alexa.response.ssml;
 
-/**
- * Created by D064954 on 18.01.2017.
- */
 public class Speak extends SSMLObject {
 
     private SSMLObject[] ssml;
@@ -18,7 +15,7 @@ public class Speak extends SSMLObject {
     public String toSSML() {
         String speak = "<speak>";
         for (SSMLObject ssmlObject : ssml) {
-            speak += ssmlObject.toString();
+            speak += ssmlObject.toSSML();
         }
         speak += "</speak>";
         return speak;

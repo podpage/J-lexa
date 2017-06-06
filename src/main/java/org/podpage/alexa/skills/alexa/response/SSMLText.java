@@ -8,22 +8,23 @@ import org.podpage.alexa.skills.alexa.response.ssml.Speak;
  */
 public class SSMLText extends ResponseText {
 
-    private SSMLObject ssml;
+    private String ssml;
 
     public SSMLText(Speak speak) {
         super("SSML");
-        this.ssml = speak;
+        this.ssml = speak.toSSML();
+        System.out.println(ssml);
     }
 
-    public SSMLObject getSSML() {
+    public String getSSML() {
         return ssml;
     }
 
     public void setSsml(Speak ssml) {
-        this.ssml = ssml;
+        this.ssml = ssml.toSSML();
     }
 
     public String toString() {
-        return ssml.toSSML();
+        return ssml;
     }
 }

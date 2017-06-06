@@ -1,8 +1,5 @@
 package org.podpage.alexa.skills.alexa.response.ssml;
 
-/**
- * Created by Lino on 17.01.2017.
- */
 public class Break extends SSMLObject {
 
     private double time;
@@ -12,6 +9,6 @@ public class Break extends SSMLObject {
     }
 
     public String toSSML() {
-        return "<break time=\"" + Math.round(time * 10) / 10 + "s\"/>";
+        return "<break time=\"" + ((double) Math.round(time * 10) / 10) + "s\"/>";
     }
 }
